@@ -1,4 +1,4 @@
-package employee;
+package sol;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -15,15 +15,15 @@ public class Manager extends Employee {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (!super.equals(obj)) return false;
-        // just check the rest of the varialbves insiden the amanger class
-        Manager oth = (Manager) obj;
-        return Objects.equals(this.hireDate, oth.hireDate);
-        // return this.hireDate.equals(oth.hireDate); 
-
+    public String toString() {
+        return super.toString() + "[hireDate=" + hireDate + "]";
     }
 
 
-
+    @Override
+    public boolean equals(Object obj) {
+        if (!super.equals(obj)) return false;
+        Manager oth = (Manager) obj;
+        return Objects.equals(this.hireDate, oth.hireDate);
+    }
 }

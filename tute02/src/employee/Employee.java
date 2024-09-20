@@ -1,27 +1,18 @@
 package employee;
 
+import java.util.ArrayList;
+
 public class Employee {
-    private int salary;
     private String name;
+    private int salary;
 
-    public Employee(int salary, String name) {
-        this.salary = salary;
+    /**
+     * Employee constructor
+     * @param name the full legal name of this employee
+     * @param salary salary in $aud
+     */
+    public Employee(String name, int salary) {
         this.name = name;
-    }
-
-    /**
-     * Getter for the employees salary
-     * @return the employees salary
-     */
-    public int getSalary() {
-        return salary;
-    }
-
-    /**
-     * Setter for the salary
-     * @param salary - salary in $AUD
-     */
-    public void setSalary(int salary) {
         this.salary = salary;
     }
     public String getName() {
@@ -30,29 +21,37 @@ public class Employee {
     public void setName(String name) {
         this.name = name;
     }
-
-    @Override
-    public String toString() {
-        // a formatted string printing out the varialbes
-        // System.out.println("Hi we are in toString");
-        return "Employee : [salary = " + salary + ", name = " + name + "]";
+    public int getSalary() {
+        return salary;
     }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null) return false;
-        // we want to make sure that the  variable values ar ethe same
-        // we need to make sure theyre of hte same class type
         if (this.getClass() != obj.getClass()) return false;
-        Employee othEmployee = (Employee) obj;
-        return othEmployee.salary == this.salary && othEmployee.name.equals(this.name);
+        // if (!(obj instanceof Employee)) return false;
+        Employee employee = (Employee) obj;
+        return this.salary == employee.salary && this.name.equals(employee.name);
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getName() + "[name=" + name + ", salary=" + salary + "]";
     }
 
     public static void main(String[] args) {
-        Employee e = new Employee(10, "Johanson");
-        Employee e2 = new Employee(10, "Johanson");
-
-        System.out.println(e == e2);
+        // System.out.println(1);
+        Employee e1 = new Employee("Franco", 1);
+        System.out.println(e1);
+        // Employee e2 = new Employee("Franco", 1);
+        // System.out.println(e1.equals(e2));
+        // System.out.println(e1 == e2);
+        // e1.equals(new ArrayList<>());
     }
 }
