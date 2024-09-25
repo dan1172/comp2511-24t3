@@ -1,7 +1,5 @@
 package employee;
 
-import java.util.ArrayList;
-
 public class Employee {
     private String name;
     private int salary;
@@ -35,7 +33,6 @@ public class Employee {
         if (this == obj) return true;
         if (obj == null) return false;
         if (this.getClass() != obj.getClass()) return false;
-        // if (!(obj instanceof Employee)) return false;
         Employee employee = (Employee) obj;
         return this.salary == employee.salary && this.name.equals(employee.name);
     }
@@ -46,7 +43,6 @@ public class Employee {
     }
 
     public static void main(String[] args) {
-        // System.out.println(1);
         Employee e1 = new Employee("Franco", 1);
         System.out.println(e1);
         // Employee e2 = new Employee("Franco", 1);
