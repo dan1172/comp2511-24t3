@@ -1,4 +1,5 @@
-package example;
+package example; 
+
 import java.util.Scanner;
 
 public class Sum {
@@ -53,7 +54,7 @@ public class Sum {
             sum = sum + Integer.parseInt(num); 
         }
         System.out.println(sum);
-        // ["1", "2", "3"]
+        sc.close();
     }
 }
 

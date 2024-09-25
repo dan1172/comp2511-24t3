@@ -1,4 +1,5 @@
-package example;
+package example; 
+
 public class AnotherClass {
     public static void main(String[] args) {
         Shouter s = new Shouter("heres a message");

@@ -1,4 +1,4 @@
-package example;
+package example; 
 
 public class Shouter {
     // variables left as private

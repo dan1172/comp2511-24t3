@@ -1,4 +1,5 @@
-package example;
+package example; 
+
 public class HelloWorld {
     // public: access modifier, "how visible is this function"
     // static: it belongs to the class itself, not any instance
