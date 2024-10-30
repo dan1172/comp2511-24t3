@@ -11,7 +11,9 @@ You can find the code, it's week's folder, and the slides from links below.
 | [03](./tute03/) | Polymorphism, UML, JUnit| [Link](https://slides.com/danielkhuu/comp2511-week-3-24t1) |
 | [04](./tute04/) | Polymorphism, UML, JUnit| [Link](https://slides.com/danielkhuu/comp2511-week-4-24t3) |
 | [05](./tute05/) | Observer, Strategy, State Pattern| [Link](https://slides.com/danielkhuu/comp2511-week-5-24t1) |
+| [07]            | No Tutorial this week               | No Slides this week
 | [07](./tute07/) | Decorator, Factory, Composite Pattern| [Link](https://slides.com/danielkhuu-1/comp2511-week-7-24t1) |
+| [08](./tute08/)  | Generics, Singleton Pattern| [Link](https://slides.com/danielkhuu-1/comp2511-week-8-24t1) |
 
 
 ## Useful Resources
