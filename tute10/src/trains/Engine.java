@@ -10,7 +10,7 @@ public class Engine extends Wagon {
         this.enginePower = enginePower;
     }
 
-    public int getEnginePower() {
+    public int getPowerDelta() {
         return enginePower;
     }
 }

@@ -7,5 +7,8 @@ public class CargoWagon extends Wagon {
     public CargoWagon() {
         super(TYPE);
     }
+    public int getPowerDelta() {
+        return -1 * POWER_REQUIRED;
+    }
     
 }

@@ -6,4 +6,10 @@ public abstract class Wagon {
     public Wagon(String type) {
         this.type = type;
     }
+
+    public abstract int getPowerDelta();
+
+    public String getType() {
+        return type;
+    }
 }

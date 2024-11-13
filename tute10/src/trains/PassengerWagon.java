@@ -7,5 +7,9 @@ public class PassengerWagon extends Wagon {
     public PassengerWagon() {
         super(TYPE);
     }
-    
+
+    public int getPowerDelta() {
+        return -1 * POWER_REQUIRED;
+    }
+
 }
